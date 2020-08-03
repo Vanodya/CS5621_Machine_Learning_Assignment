@@ -183,7 +183,8 @@ def run_transfer_learning_vgg16():
     accuracy_over_epoch.to_csv(
         "E:/MSc/Sem 02/Machine Learning/Assignment 02/SGD_accuracies_over_epoch_more_layers_with_noise_0_75_with_VGG.csv")
 
-
+# Question no 03 [improve the model accuracy]
+# ---------------------------------------------------------------------------------------------------------------------
 # load data
 x_train, y_train, x_test, y_test = load_dataset()
 
@@ -197,7 +198,7 @@ x_train_noisy = np.clip(x_train_noisy, 0., 1.)
 x_test_noisy = np.clip(x_test_noisy, 0., 1.)
 
 # Grid search results
-# run_grid_search()
+run_grid_search()
 
 # Transfer learning with VGG16
 run_transfer_learning_vgg16()

@@ -100,4 +100,4 @@ x_train, y_train, x_test, y_test = load_dataset()
 # modelling
 history, accuracy_over_epoch = evaluate_model(x_train, y_train, x_test, y_test)
 accuracy_over_epoch = pd.DataFrame(accuracy_over_epoch)
-accuracy_over_epoch.to_csv("E:/MSc/Sem 02/Machine Learning/Assignment 02/SGD_accuracies_over_epoch_more_layers.csv")
+# accuracy_over_epoch.to_csv("E:/MSc/Sem 02/Machine Learning/Assignment 02/SGD_accuracies_over_epoch_more_layers.csv")
